@@ -7,7 +7,8 @@
 /*Mobile: 375px*/
 
 body {
-    background: url(images/bg-mobile.png);
+    background: url(images/bg-mobile.png) no-repeat;
+    background-size: cover;
     font-family: 'Raleway', 'sans-serif';
     font-size: 14px;
 }
@@ -21,6 +22,9 @@ section {
     align-items: center;
 }
 
+
+/*First Box*/
+
 .firstBox {
     width: 90%;
     background-color: hsl(228, 56%, 26%);
@@ -28,7 +32,7 @@ section {
 }
 
 .logo {
-    margin: 9%;
+    margin: 10%;
 }
 
 .icons {
@@ -42,4 +46,69 @@ section {
 
 .document,
 .folder,
-.uploaa {}
+.upload {
+    background-color: hsl(229, 57%, 11%);
+    padding: 6%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5em;
+}
+
+
+/*Second Box*/
+
+.secondBox {
+    width: 90%;
+    color: white;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    margin-top: 7%;
+}
+
+.text span {
+    font-weight: bolder;
+}
+
+.bar {
+    background-color: hsl(228, 55%, 13%);
+    width: 80%;
+    margin-top: 5%;
+    padding: 1%;
+    border-radius: 25px;
+}
+
+.bar .insidebar {
+    border-radius: 10px;
+    width: 80%;
+    height: 98%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bar .insidebar .whiteball {
+    height: 13px;
+    background-color: white;
+    width: 6%;
+    border-radius: 12px;
+}
+
+.limits {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    font-weight: bolder;
+    margin-top: 4%;
+    margin-bottom: 20%;
+}
+
+
+/*Desktop Design Working....*/
