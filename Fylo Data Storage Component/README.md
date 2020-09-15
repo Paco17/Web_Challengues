@@ -1,6 +1,6 @@
 # Frontend Mentor - Fylo data storage componen
 
-(./design/desktop-preview.jpg)
+![](https://github.com/Paco17/Web_Challengues/blob/master/Fylo%20Data%20Storage%20Component/design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
