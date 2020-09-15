@@ -1,5 +1,7 @@
 # Frontend Mentor - Fylo data storage componen
 
+(./design/desktop-preview.jpg)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
