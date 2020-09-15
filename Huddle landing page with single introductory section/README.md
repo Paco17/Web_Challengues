@@ -1,6 +1,6 @@
 # Frontend Mentor - Huddle landing page with single introductory section
 
-![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)
+![](https://github.com/Paco17/Web_Challengues/blob/master/Huddle%20landing%20page%20with%20single%20introductory%20section/static/design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
