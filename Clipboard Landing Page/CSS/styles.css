@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+body {
+    font-family: 'Bai Jamjuree', 'sans-serif';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vh;
+    ;
+}
+
+
+/*--Header--*/
+
+.header {
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+}
+
+.header img {
+    margin-top: 30%;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: var(--dark-grayish-blue);
+    font-weight: 600;
+    padding: 1.6rem 0.6rem;
+    width: 80%;
+    margin: auto;
+}
+
+p {
+    color: var(--grayish-blue);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    width: 83%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+button {
+    width: 16rem;
+    height: 3rem;
+    margin: .7rem;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 10rem;
+    cursor: grab;
+    color: white;
+}
+
+.buttoniOs {
+    background-color: var(--strong-cyan);
+    box-shadow: var(--strong-cyan);
+}
+
+.buttonMac {
+    background-color: var(--light-blue);
+    box-shadow: var(--light-blue);
+}
+
+
+/*Contenedores*/
+
+h3 {
+    color: var(--dark-grayish-blue);
+    margin-bottom: .5em;
+}
+
+.container-info {
+    margin-top: 30%;
+    margin-bottom: 2em;
+}
+
+.container-methods {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.container-methods img {
+    height: 15em;
+    margin-bottom: 3.5em;
+}
+
+
+/*
+- Strong Cyan: hsl(171, 66%, 44%)
+- Light Blue: hsl(233, 100%, 69%)
+- Dark Grayish Blue: hsl(210, 10%, 33%)
+- Grayish Blue: hsl(201, 11%, 66%)
+*/
