@@ -93,9 +93,82 @@ body {
     background-color: white;
     box-shadow: 8px 10px 15px -7px rgba(93, 164, 164, 0.5);
     padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .jobs_column {
     display: flex;
     align-items: center;
+}
+
+
+/* Columna Izquierda */
+
+.jobs img {
+    width: 90px;
+    height: auto;
+}
+
+.jobs_data {
+    margin-left: 25px;
+    width: auto;
+}
+
+.jobs_company {
+    color: #40A5A4;
+    font-size: 13px;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.jobs_title {
+    color: var(--veryDarkGrayishCyan);
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.jobs_details {
+    margin: 0;
+    padding: 0;
+}
+
+.jobs_details_item {
+    display: inline-block;
+    color: var(--darkGrayishCyan);
+    font-size: 15px;
+}
+
+.jobs_details_item:after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--darkGrayishCyan);
+    display: inline-block;
+    margin: 5px 13px;
+}
+
+.jobs_details_item:last-child::after {
+    display: none;
+}
+
+
+/* Columna Derecha */
+
+.tag {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--lightGrayishCyan-FilterTablets);
+    font-size: 14px;
+    font-weight: 700;
+    color: #40A5A4;
+    margin: 5px;
+    cursor: pointer;
 }
