@@ -21,20 +21,6 @@ body {
     ;
 }
 
-
-/*--Header--*/
-
-.header {
-    background-image: url(../images/bg-header-mobile.png);
-    background-repeat: no-repeat;
-    background-size: 100% 80%;
-}
-
-.header img {
-    margin-top: 30%;
-    margin-bottom: 2rem;
-}
-
 h1 {
     font-size: 1.8em;
     color: var(--dark-grayish-blue);
@@ -49,15 +35,37 @@ p {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
-    width: 83%;
     margin: auto;
-    margin-bottom: 2em;
+}
+
+h3 {
+    color: var(--dark-grayish-blue);
+    margin-top: 2.3em;
+    margin-bottom: .7em;
+}
+
+
+/*--Header--*/
+
+.header {
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+}
+
+.header img {
+    margin-top: 30%;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    margin-top: 2em;
 }
 
 button {
     width: 16rem;
     height: 3rem;
-    margin: .7rem;
+    margin-top: 1.5em;
     align-items: center;
     border: none;
     outline: none;
@@ -79,14 +87,10 @@ button {
 
 /*Contenedores*/
 
-h3 {
-    color: var(--dark-grayish-blue);
-    margin-bottom: .5em;
-}
-
 .container-info {
-    margin-top: 30%;
-    margin-bottom: 2em;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 4em;
 }
 
 .container-methods {
@@ -94,17 +98,85 @@ h3 {
     flex-direction: column;
     width: 80%;
     margin: auto;
+    margin-bottom: 10em;
 }
 
 .container-methods img {
-    height: 15em;
-    margin-bottom: 3.5em;
+    height: 13em;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 1em;
 }
 
+.container-clipboard {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 4em;
+}
 
-/*
-- Strong Cyan: hsl(171, 66%, 44%)
-- Light Blue: hsl(233, 100%, 69%)
-- Dark Grayish Blue: hsl(210, 10%, 33%)
-- Grayish Blue: hsl(201, 11%, 66%)
-*/
+.container-clipboard .sub-content {
+    margin-bottom: 3em;
+}
+
+.container-clipboard img {
+    height: 12em;
+    width: 100%;
+    margin-bottom: 3em;
+    margin: auto;
+}
+
+.container-workflow div {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 4em;
+}
+
+.marcas {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.marcas img {
+    margin: 2em 0em;
+}
+
+.download {
+    width: 80%;
+    margin: auto;
+    margin-top: 6em;
+    margin-bottom: 8em;
+}
+
+.footer {
+    background-color: lavender;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+}
+
+.footer .menu img {
+    width: 50px;
+    height: 50px;
+    margin-top: 3em;
+}
+
+.footer span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.icons .social {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
