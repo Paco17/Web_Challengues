@@ -1,6 +1,6 @@
 # Frontend Mentor - Clipboard landing page
 
-(./design/desktop-preview.jpg)
+![](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
