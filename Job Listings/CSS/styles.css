@@ -37,6 +37,7 @@ The designs were created to the following widths:
     --lightGrayishCyan-FilterTablets: hsl(180, 31%, 95%);
     --darkGrayishCyan: hsl(180, 8%, 52%);
     --veryDarkGrayishCyan: hsl(180, 14%, 20%);
+    --DefaultCyan: #40A5A4;
 }
 
 html,
@@ -77,6 +78,8 @@ body {
     border-radius: 10px;
     margin-top: -36px;
     opacity: 1;
+    display: flex;
+    justify-content: space-between;
 }
 
 .jobs {
@@ -116,7 +119,7 @@ body {
 }
 
 .jobs_company {
-    color: #40A5A4;
+    color: var(--DefaultCyan);
     font-size: 13px;
     display: block;
     font-weight: 600;
@@ -157,18 +160,67 @@ body {
 }
 
 
-/* Columna Derecha */
+/* Columna Derecha y Derecha*/
 
-.tag {
+.tag,
+.close_tag {
     display: inline-block;
     width: auto;
     height: auto;
     padding: 10px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: var(--lightGrayishCyan-FilterTablets);
     font-size: 14px;
     font-weight: 700;
-    color: #40A5A4;
+    color: var(--DefaultCyan);
     margin: 5px;
     cursor: pointer;
+    transition: background-color 0.2s;
+    position: relative;
+}
+
+.tag:hover {
+    background-color: var(--DefaultCyan);
+    color: white;
+}
+
+.close_tag {
+    padding-right: 45px;
+}
+
+.close_tag::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 100%;
+    background-color: var(--DefaultCyan);
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(../images/icon-remove.svg);
+    background-position: center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.close_tag:hover::after {
+    background-color: var(--veryDarkGrayishCyan);
+}
+
+.search_clear {
+    margin-left: 50px;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    outline: none;
+    color: var(--DefaultCyan);
+    font-weight: 700;
+}
+
+.search_clear:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
