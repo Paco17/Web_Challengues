@@ -1,0 +1,82 @@
+@import url("https://fonts.google.com/specimen/Nunito+Sans");
+:root {
+    --DarkBlueElements: hsl(209, 23%, 22%);
+    --VeryDarkBlueBackground: hsl(207, 26%, 17%);
+    --VeryDarkBlueText: hsl(200, 15%, 8%);
+    --DarkGrayLightInput: hsl(0, 0%, 52%);
+    --VeryLightGrayBackground: hsl(0, 0%, 98%);
+    --WhiteDarkModeTextLightModeElements: hsl(0, 0%, 100%);
+}
+
+* {
+    background-origin: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header {
+    background-color: var(--WhiteDarkModeTextLightModeElements);
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1440px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.btn-dark-mode {
+    font-size: 18px;
+    border: none;
+    background-color: var(--WhiteDarkModeTextLightModeElements);
+}
+
+.btn-dark-mode .fas {
+    display: none;
+}
+
+
+/* Modo Dark*/
+
+body.dark .btn-dark-mode .fas {
+    display: inline-block;
+}
+
+body.dark .btn-dark-mode .far {
+    display: none;
+}
+
+
+/*Input Styling*/
+
+.search {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 7px;
+    border: none;
+    min-width: 325px;
+    box-shadow: 10px 12px 18px 0px rgba(112, 112, 112, 0.63);
+}
+
+
+/*Dropdown Styling*/
+
+.dropdown {
+    padding: 20px;
+    font-size: 18px;
+    box-shadow: 10px 12px 18px 0px rgba(112, 112, 112, 0.63);
+    position: relative;
+}
