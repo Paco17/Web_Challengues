@@ -9,7 +9,7 @@
 }
 
 * {
-    background-origin: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -19,6 +19,7 @@ body {
 
 header {
     background-color: var(--WhiteDarkModeTextLightModeElements);
+    box-shadow: 10px 12px 18px 0px rgba(112, 112, 112, 0.63);
 }
 
 img {
@@ -31,15 +32,17 @@ h1 {
 
 .container {
     display: flex;
-    max-width: 1440px;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 40px;
+    max-width: 1440px;
+    padding: 30px;
 }
 
 .btn-dark-mode {
     font-size: 18px;
     border: none;
+    cursor: pointer;
     background-color: var(--WhiteDarkModeTextLightModeElements);
 }
 
@@ -63,11 +66,11 @@ body.dark .btn-dark-mode .far {
 
 .search {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     padding: 20px;
     border-radius: 7px;
     border: none;
-    min-width: 325px;
+    min-width: 300px;
     box-shadow: 10px 12px 18px 0px rgba(112, 112, 112, 0.63);
 }
 
@@ -75,8 +78,62 @@ body.dark .btn-dark-mode .far {
 /*Dropdown Styling*/
 
 .dropdown {
+    border-radius: 4px;
     padding: 20px;
-    font-size: 18px;
+    font-size: 16px;
+    background-color: #fff;
     box-shadow: 10px 12px 18px 0px rgba(112, 112, 112, 0.63);
     position: relative;
+    cursor: pointer;
+}
+
+.dropdown .fa-chevron-down {
+    margin-left: 10px;
+}
+
+.dropdown ul {
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 10px 12px 18px 0px rgba(112, 112, 112, 0.63);
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    list-style-type: none;
+    width: 100%;
+    display: none;
+}
+
+.dropdown .open ul {
+    display: block;
+}
+
+.dropdown ul li {
+    margin: 5px 0
+}
+
+
+/* Country Design */
+
+.country {
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 10px 12px 18px 0px rgba(112, 112, 112, 0.63);
+    overflow: hidden;
+    cursor: pointer;
+    max-width: 300px;
+    margin: 40px;
+}
+
+.country-body {
+    padding: 30px;
+}
+
+.country-body h2 {
+    margin-top: 0;
+}
+
+.container.countries {
+    justify-content: center;
 }
