@@ -6,6 +6,7 @@
     --DarkGrayLightInput: hsl(0, 0%, 52%);
     --VeryLightGrayBackground: hsl(0, 0%, 98%);
     --WhiteDarkModeTextLightModeElements: hsl(0, 0%, 100%);
+    --background-el: hsl(0, 0%, 100%);
 }
 
 * {
@@ -15,10 +16,18 @@
 body {
     background-color: hsl(0, 0%, 98%);
     font-family: 'Nunito Sans', sans-serif;
+    color: hsl(200, 15%, 8%);
+    margin: 0;
+}
+
+body.dark {
+    background-color: var(--VeryDarkBlueBackground);
+    color: var(--WhiteDarkModeTextLightModeElements);
+    --background-el: var(--DarkBlueElements);
 }
 
 header {
-    background-color: var(--WhiteDarkModeTextLightModeElements);
+    background-color: var(--background-el);
     box-shadow: 10px 12px 18px 0px rgba(112, 112, 112, 0.63);
 }
 
@@ -35,29 +44,36 @@ h1 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin: auto;
     max-width: 1440px;
     padding: 30px;
+    position: relative;
 }
 
-.btn-dark-mode {
-    font-size: 18px;
+
+/* Button styling */
+
+.btn-toggle {
+    background-color: var(--background-el);
     border: none;
+    color: inherit;
     cursor: pointer;
-    background-color: var(--WhiteDarkModeTextLightModeElements);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    width: 120px;
 }
 
-.btn-dark-mode .fas {
+.btn-toggle .fas {
     display: none;
 }
 
-
-/* Modo Dark*/
-
-body.dark .btn-dark-mode .fas {
+body.dark .btn-toggle .fas {
     display: inline-block;
 }
 
-body.dark .btn-dark-mode .far {
+body.dark .btn-toggle .far {
     display: none;
 }
 
@@ -65,13 +81,19 @@ body.dark .btn-dark-mode .far {
 /*Input Styling*/
 
 .search {
+    background-color: var(--background-el);
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
     padding: 20px;
     border-radius: 7px;
+    color: inherit;
     border: none;
-    min-width: 300px;
+    min-width: 400px;
     box-shadow: 10px 12px 18px 0px rgba(112, 112, 112, 0.63);
+}
+
+.search::placeholder {
+    color: inherit;
 }
 
 
@@ -81,7 +103,7 @@ body.dark .btn-dark-mode .far {
     border-radius: 4px;
     padding: 20px;
     font-size: 16px;
-    background-color: #fff;
+    background-color: var(--background-el);
     box-shadow: 10px 12px 18px 0px rgba(112, 112, 112, 0.63);
     position: relative;
     cursor: pointer;
@@ -95,7 +117,7 @@ body.dark .btn-dark-mode .far {
     font-size: 16px;
     border-radius: 4px;
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--background-el);
     box-shadow: 10px 12px 18px 0px rgba(112, 112, 112, 0.63);
     position: absolute;
     left: 0px;
@@ -116,24 +138,26 @@ body.dark .btn-dark-mode .far {
 
 /* Country Design */
 
-.country {
+.card {
     border-radius: 6px;
-    background-color: #fff;
+    background-color: var(--background-el);
     box-shadow: 10px 12px 18px 0px rgba(112, 112, 112, 0.63);
-    overflow: hidden;
     cursor: pointer;
-    max-width: 300px;
+    overflow: hidden;
     margin: 40px;
+    max-width: 100%;
+    width: 300px;
 }
 
-.country-body {
+.card-body {
     padding: 30px;
 }
 
-.country-body h2 {
+.card-body h2 {
     margin-top: 0;
 }
 
 .container.countries {
     justify-content: center;
+    margin: auto;
 }
